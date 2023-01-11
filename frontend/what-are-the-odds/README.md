@@ -1,5 +1,4 @@
-# vue-typescript-example
-
+# What are the odds ? (Frontend, made in Vue)
 ## Project setup
 ```
 npm install
@@ -15,15 +14,8 @@ npm run serve
 npm run build
 ```
 
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
+### Singe Page Web Application
+Start the front end and the back end, select your empire.json file to upload and voilà!
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
