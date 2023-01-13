@@ -27,4 +27,19 @@ describe('OddsApplicationService', () => {
       expect(result).toStrictEqual(42);
     });
   });
+
+  describe('getOddsWithMillenium', () => {
+    it('should call for  domain service', async () => {
+      // Given
+      const empire: Empire = new Empire(9, [new BountyHunter('Hoth', 6), new BountyHunter('Hoth', 7), new BountyHunter('Hoth', 8)]);
+      const milleniumFalcon: MilleniumFalcon = new MilleniumFalcon(6, 'Tatooine', 'Endor');
+      oddsDomainService.getOddsForEmpirePatrol.calledWith(isA(MilleniumFalcon), isA(Empire)).mockResolvedValue(42);
+
+      // When
+      const result = await applicationService.getOddsWithMillenium(milleniumFalcon, empire);
+
+      // Then
+      expect(result).toStrictEqual(42);
+    });
+  });
 });

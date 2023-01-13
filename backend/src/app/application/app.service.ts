@@ -13,6 +13,10 @@ export class OddsApplicationService {
       millenium_falcon.departure,
       millenium_falcon.arrival,
     );
+    return this.getOddsWithMillenium(milleniumFalcon, empire);
+  }
+
+  getOddsWithMillenium(milleniumFalcon: MilleniumFalcon, empire: Empire): Promise<number> {
     return this.oddsDomainService.getOddsForEmpirePatrol(milleniumFalcon, empire);
   }
 }

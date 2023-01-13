@@ -26,6 +26,7 @@
     "@nestjs/platform-express": "^9.0.0",
     "@nestjs/swagger": "^6.1.4",
     "@nestjs/typeorm": "^9.0.1",
+    "nest-commander": "^3.4.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.2.0",
     "sqlite3": "^5.1.4",
@@ -79,7 +80,7 @@
     "coveragePathIgnorePatterns": [
       ".module.ts",
       ".interface.ts",
-      "main.ts"
+      "main(.cli)?.ts"
     ],
     "coverageDirectory": "./coverage",
     "testEnvironment": "node"
